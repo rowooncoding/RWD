@@ -106,7 +106,7 @@ input[type="search"] {
 
   /* 모바일 메인메뉴 제어버튼 */
   .buttonWrapper {
-    padding: var(sapcing-xxs);
+    padding: var(--spacing-xxs);
     overflow: hidden;
     position: absolute;
     top: 3.75rem;
@@ -150,13 +150,13 @@ input[type="search"] {
     transform: translateY(-100%);
   }
 
-  .button--burger.is--active .button--burgerBarMiddle {
-    transform: translate(-150%, -50%);
-  }
-
   .button--burger.is--active .button--burgerBarTop {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
+  }
+
+  .button--burger.is--active .button--burgerBarMiddle {
+    transform: translate(-150%, -50%);
   }
 
   .button--burger.is--active .button--burgerBarBottom {
@@ -169,51 +169,55 @@ input[type="search"] {
 @media (min-width: 769px) {
   /* 데스크탑 헤더 */
   .appHeader {
-  max-width: var(--container-width);
-  margin-left: auto;
-  margin-right: auto;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* 데스크탑 로고 */
   .logo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* 데스크탑 검색 폼 */
   .searchForm__group {
-  justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .searchForm__group .formInput {
-  width: 25rem;
+    width: 25rem;
   }
 
   /* 데스크탑 메인메뉴 제어버튼 */
   .button--burger {
-  display: none;
+    display: none;
   }
+
   /* 데스크탑 메인 메뉴 */
   .menu {
-  background: var(--secondary-color);
-  padding: var(--spacing-base) var(--spacing-lg);
+    background: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
   }
 
   .menu__list {
-  max-width: var(--container-width);
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-md);
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menu__link {
-  color: var(--white);
-  text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 }
 
