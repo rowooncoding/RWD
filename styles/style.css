@@ -150,10 +150,41 @@ input[type="search"] {
   color: var(--accent-twitter);
 }
 
+/* 공통 메인 콘텐츠 섹션 본문 */
+.appMain [class*="__summary"] {
+  line-height: 1.5;
+  margin-top: var(--spacing-base);
+}
+
 /* 공통 추천 서적 */
 .book {
-  /* background: lightgreen; */
   grid-area: book;
+}
+
+.book__cover {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.book__coverCaption {
+  margin: var(--spacing-sm);
+  line-height: 1.6rem;
+}
+
+.book__info {
+  text-align: center;
+  margin-top: var(--spacing-base);
+}
+
+.book__info * {
+  display: inline;
+}
+
+.ratingStar {
+  display: block;
+  font-size: var(--text-xl);
 }
 
 /* 공통 새소식 */
